@@ -5,6 +5,7 @@ url: https://yilinguo.github.io
 description: "This is my personal website"
 skills: "Junior in Computer Science at University of Michigan"
 meta_author: Yilin GUO
+enforce_ssl: yilinguo.github.io
 
 # Google webmaster tools
 google_verify:
@@ -34,7 +35,6 @@ footer:
   copyright: Yilin Guo
   location: Location
   social: Social
-  credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -50,13 +50,10 @@ address:
   - line: 1861 Shirley Lane, Apt B2
   - line: Ann Arbor, MI 48105
 
-# Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
-
 # Build settings
 markdown: kramdown
 permalink: pretty
+highlighter: pygments
 encoding: utf-8
 
 favicon: img/favicon.png
-enforce_ssl: yilinguo.github.io
