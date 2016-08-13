@@ -1,1 +1,7 @@
 _site
+assets/*.aux
+assets/*.synctex.gz
+assets/*.fls
+assets/*.fdb_latexmk
+assets/*.log
+assets/*.out
