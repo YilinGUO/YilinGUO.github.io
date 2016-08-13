@@ -5,3 +5,5 @@ assets/*.fls
 assets/*.fdb_latexmk
 assets/*.log
 assets/*.out
+.DS_Store
+assets/.DS_Store

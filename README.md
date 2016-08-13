@@ -1,1 +1,2 @@
-This is my personal webpage utilizing the Freelancer Jekyll theme
+This is my personal webpage utilizing the Freelancer Jekyll theme.
+
