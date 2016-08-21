@@ -1,96 +1,25 @@
-
-    <!-- Portfolio Grid Section -->
+   <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Resume</h2>
+                    <h2>Portfolio</h2>
                     <hr class="star-primary">
                 </div>
-            </div>            
-            
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <a href="/assets/cv_guoyilin.pdf" class="btn-success btn-lg">
-                        <i class="fa fa-download"></i> Download Resume
-                    </a>
-                </div>
             </div>
-
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">        
-                    <h1>Yilin(Elaine) GUO</h1>
-                    <p>
-                        1861 Shirley Lane, Apt B2<br>
-                        Ann Arbor, MI 48105<br>
-                        (734)846-1766<br>
-                        guoyilin@umich.edu
-                    </p>
-                </div>
-            </div>         
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2"> 
-                    <h3>Education</h3>
-                        <ul>
-                            <li>University of Michigan
-                            <span style="float:right;"> Expected Apr, 2017</span><br>
-                            B.S.E in Computer Science Engineering<br>
-                            Courses taken: eecs281, eecs285, eecs312, eecs370<br>
-                            Courses taking: eecs376, eecs482, eecs484, stats412</li>
-                            <li>Shanghai Jiao Tong University<span style="float:right;"> Expected Aug, 2017</span><br>
-                            B.S.E in Electrical and Computer Engineering
-                            </li>
-                        </ul>
-                    <h3>Projects</h3>
-                    <h4>Logman Manager</h4>
-                    <p>
-                        <ul>
-                            <li>Enables users to perform timestamp, category, and keyword search interactively over the log file they provided</li>
-                            <li>Constructs an excerpt list for computation internally</li>
-                            <li>Search function implemented through hash tables</li>
-                        </ul>
-                    </p>
-                    <h4><a href="https://github.com/YilinGUO/E-Reader-Prototype">E-Reader Prototype</a></h4>
-                    <p>
-                        <ul>
-                            <li>Able to select books, turn pages with page number displayed concurrently</li>
-                            <li>GUI implemented with Java swing</li>
-                            <li>Search function and database back end to be implemented</li>
-                        </ul>
-                    </p>
-
-                    <h4><a href="https://github.com/YilinGUO/Cross-4-Game">Cross-4 Chess Game</a></h4>
-                    <p>
-                        <ul>
-                            <li>Enables two players to play cross-4 while chatting concurrently</li>
-                            <li>Socket programming with one server and two clients</li>
-                            <li>GUI implemented with Java swing</li>
-                            <li>Chatting function implemented with Java thread</li>
-                        </ul>
-                    </p>
-
-                    <h4><a href="https://github.com/YilinGUO/SakaiMobile">Mobile Sakai Android App</a></h4>
-                    <p>
-                        <ul>
-                            <li>Designed for students to browse resources, query assignments and exam grades</li>
-                            <li>Implemented an alarm function to alert due time</li>
-                            <li>Set up a Sakai server 10.0 via Tomcat</li>
-                            <li>Utilized the Sakai API for due time, appointment time, etc</li>
-                            <li>GUI implemented using Java via Android Studio</li>
-                            <li>Tested and validated on Android 4.0</li>
-                        </ul>
-                    </p>
-                    <h3>Technical Strengths</h3>
-                    <p>
-                        <ul>
-                            <li>C++(proficient), Java(proficient), C(prior experience), Python(prior experience)</li>
-                            <li>SQL, HTML, R, Verilog, Matlab, LaTeX, Markdown</li>
-                            <li>Windows, Linux (Redhat, Debian, and Ubuntu)</li>
-                            <li>Git, Vim, Valgrind, gdb, zsh</li>
-                        </ul>
-                    </p>
-                </div>
+                {% for post in site.posts %}
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        </a>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </section>
