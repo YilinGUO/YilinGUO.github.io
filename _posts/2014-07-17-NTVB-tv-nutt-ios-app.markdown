@@ -4,9 +4,9 @@ modal-id: 2
 date: 2014-07-17
 img: cake.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!
+project-date: August 2016
+client: Logic Solutions
+category: Mobile Development
+description: This is an ios app built in objective c, targeted universal device with ios no later that 7.0. Main features of this app includes but not limited to login, signup, and logout, tv program browsing, program searching, reminder setting for liked programs, sharing to social media such as twitter and facebook, etc. The program uses <a href="http://developer.tmsapi.com">the grace api</a>. 
 
 ---

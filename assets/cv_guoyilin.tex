@@ -1,19 +1,29 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-%\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.4in]{geometry} % Document margins
+\usepackage{xcolor}
 
 %\usepackage[right = 1 in, left = 1 in, top = 1 in, bottom = 1 in]{geometry}
-\usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}
-\hypersetup{%
-	colorlinks=false,% hyperlinks will be black
-	allbordercolors={0 0 0},,% hyperlink borders will be red
-	pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+\usepackage{hyperref}
+%[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black]
+\hypersetup{
+    colorlinks=true,
+    urlcolor=gray
+    %colorlinks=false,
+    %allbordercolors={0 0 0},
+    %urlbordercolor=blue
 }
+
 \name{Yilin(Elaine) Guo} % Your name
-\address{1861 Shirley Lane, Apt B2} % Your address
+\address{1861 Shirley Lane Apt B2, Ann Arbor, MI 48105} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{(734)846-1766 \\ guoyilin@umich.edu \\ \url{yilinguo.github.io}} % Your phone number and email
+\address{(734)846-1766 \\ guoyilin@umich.edu \\ \url{https://yilinguo.github.io}} % Your phone number and email
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{\fontsize{9}{10} \selectfont Target: Looking for full time software engineer position, available after graduation.\\ Please visit \href{https://yilinguo.github.io}{my homepage} for most updated resume and detailed explanation about my projects.}
+
 
 \begin{document}
 %----------------------------------------------------------------------------------------
@@ -23,10 +33,11 @@
 \begin{rSection}{Education}
 {\bf University of Michigan} \hfill {\em Expected Apr 2017} \\ 
 B.S.E. in Computer Science Engineering\\
-Courses taken: data structures and algorithms, database, operating systems, machine learning, probability and statistics\\
+Courses taken/taking: data structures and algorithms, database, operating systems, machine learning, mobile app development\\
+Honors: Dean's list, 2015 - 2016 academic year\\
 {\bf Shanghai Jiao Tong University, China} \hfill {\em Expected Aug, 2017} \\ 
 B.S.E. in Electrical and Computer Engineering \\
-Honors: Selected on the Dean's list, 2013 - 2014 academic year
+Honors: Dean's list, 2013 - 2014 academic year
 %Minor in Linguistics \smallskip \\
 %Member of Eta Kappa Nu \\
 %Overall GPA: 5.678
@@ -34,12 +45,10 @@ Honors: Selected on the Dean's list, 2013 - 2014 academic year
 \end{rSection}
 
 \begin{rSection}{Work Experience}
-	\begin{rSubsection}{Technical Intern}{Aug 2016}{Logic Solutions}{Ann Arbor}
-	\item interface with clients
-	\item turn business and functional requirements into System Requirements Specification, design application wireframes, design comps
-	\item assist in usability studies and issues
-	\item further our user experience integration, program web and mobile applications
-	\item test applications
+	\begin{rSubsection}{Technical Intern}{Aug 2016}{Logic Solutions, Inc.}{Ann Arbor}
+	\item Built an IOS app that allows users to browse movies and shows currently airing on their television provider
+	\item Created a trivia game that lets users play while watching, with a badge-rewarding system
+	\item Implemented reminder function to alert users when their favorite shows are about to air
 	\end{rSubsection}
 \end{rSection}
 %----------------------------------------------------------------------------------------
@@ -48,12 +57,10 @@ Honors: Selected on the Dean's list, 2013 - 2014 academic year
 
 \begin{rSection}{Projects}
 
-	\begin{rSubsection}{Mobile Sakai Android App}{May 2014}{Member in team of five}{Shanghai}
+	\begin{rSubsection}{Mobile Sakai Android App}{May 2014}{}{}
 	\item Designed for students to browse resources, query assignments and exam grades
-	\item Implemented an alarm function to alert due time
-	\item Set up one Sakai 10 server via Tomcat
-	\item Utilized the Sakai API for due time, appointment time, etc
-	\item GUI implemented using Java via Android Studio
+	\item Requested the Sakai 10 API for due time, appointment time, etc
+	\item Implemented reminder function to alert due time
 	\end{rSubsection}
 	
 	%\begin{rSubsection}{ER-Reader Prototype}{Sept 2015}{Individual}{Ann Arbor}
@@ -62,14 +69,20 @@ Honors: Selected on the Dean's list, 2013 - 2014 academic year
 	%	\item Search function and database back end to be implemented
 	%\end{rSubsection}
 	
-	\begin{rSubsection}{Cross-4 Chess Game}{Sept 2015}{Individual}{Ann Arbor}
-		\item Enables two players to play cross-4 while chatting concurrently
+	\begin{rSubsection}{Cross-4 Chess Game}{Sept 2015}{}{}
+		\item Let two players to play by turns in separate windows until one player wins by getting four pieces consecutively in a row 
 		\item Socket programming with one server and two clients
-		\item GUI implemented with Java \textit{swing}
-		\item Chatting function implemented with Java \textit{thread}		
+		\item GUI implemented with Java \textit{swing}		
 	\end{rSubsection}
 %------------------------------------------------
 
+\end{rSection}
+
+\begin{rSection}{Research Experience}
+	\begin{rSubsection}{Crossword Solving System}{May 2016}{University of Michigan, with Prof. Dragmir Radev}{Ann Arbor}
+	\item Wrote a classification component with \textit{sklearn}: vectorized the clues in terms of vocabulary in the database; trained the clue-answer pair with different models including nearest neighbors, convolutional neural networks, etc.
+	\item Used python 2 to generate better output form (sorted by weighted score) from all the crossword solving components including lucene-cwg, lucene-otsys, etc.
+	\end{rSubsection}
 \end{rSection}
 %
 %\begin{rSection}{Leadership Experience}
@@ -105,11 +118,10 @@ Honors: Selected on the Dean's list, 2013 - 2014 academic year
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & C++(proficient), Java(proficient), C(prior experience),\\ & Python(prior experience)\\
-Other Languages &  SQL, HTML, R, Verilog, Matlab, \LaTeX, Markdown \\
-Operating systems & Windows, Linux (redhat, debian, and ubuntu)\\
+Computer Languages & C++(proficient), Java(proficient), Objective-C(proficient),\\ &C(prior experience), Python(prior experience)\\
+Other Languages &  SQL, HTML, CSS, Verilog, Matlab, \LaTeX \\
 %Databases & MySQL, PostgreSQL, Microsoft SQL \\
-Tools & Git, Vim, Valgrind, gdb, zsh
+Tools & Git, gdb, Valgrind, Vim
 \end{tabular}
 
 \end{rSection}
