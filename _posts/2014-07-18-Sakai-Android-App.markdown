@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2014-07-18
-cover-img: cabin.png
+cover-img: sakai.png
 content-img1: sakai_login.png
 content-img2: sakai_announcements.png
 content-img3: sakai_dues.png

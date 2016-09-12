@@ -2,7 +2,7 @@
 layout: default
 modal-id: 4
 date: 2014-07-15
-cover-img: game.png
+cover-img: ereader.png
 content-img1: book_noselect.png
 content-img2: book_cover.png
 content-img3: book_page.png

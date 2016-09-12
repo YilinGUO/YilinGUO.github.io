@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2014-07-16
-cover-img: circus.png
+cover-img: game.png
 content-img1: cross_empty.png
 content-img2: cross_play.png
 content-img3: cross_win.png

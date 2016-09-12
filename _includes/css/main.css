@@ -111,11 +111,15 @@ header .intro-text .name {
 	display: block;
 	/*text-transform: uppercase;*/
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-shadow: 2px 2px gray;
+	color: white;
 	font-size: 2em;
 	font-weight: 700;
 }
 
 header .intro-text .skills {
+	text-shadow: 2px 2px gray;
+	color: white;
 	font-size: 1.25em;
 	font-weight: 300;
 }

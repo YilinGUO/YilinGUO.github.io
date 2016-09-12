@@ -160,6 +160,7 @@
 				// check for an escape character before a pause value
 				// format: \^\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^
 				// single ^ are removed from string
+				self.el.fadeIn();
 				var charPause = 0;
 				var substr = curString.substr(curStrPos);
 				if (substr.charAt(0) === '^') {
@@ -278,6 +279,9 @@
 				// else{
 				//  self.stopNum = 0;
 				// }
+				self.el.fadeOut(function(){
+                    self.el.text("");
+                });
 
 				if (self.contentType === 'html') {
 					// skip over html tags while backspacing
