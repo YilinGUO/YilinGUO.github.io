@@ -2,7 +2,10 @@
 layout: default
 modal-id: 4
 date: 2014-07-15
-img: game.png
+cover-img: game.png
+content-img1: book_noselect.png
+content-img2: book_cover.png
+content-img3: book_page.png
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap

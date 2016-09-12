@@ -2,7 +2,10 @@
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: cake.png
+cover-img: cake.png
+content-img1: nut_front.png
+content-img2: nut_main.png
+content-img3: nut_profile.png
 alt: image-alt
 project-date: August 2016
 client: Logic Solutions
