@@ -7,9 +7,8 @@ content-img1: cross_empty.png
 content-img2: cross_play.png
 content-img3: cross_win.png
 alt: image-alt
-project-date: April 2014
+project-date: October 2015
 client: Start Bootstrap
 category: Web Development
-description: The project is written in Java using the swing class.
-
+description: The cross 4 game is a chess game where two players play in turns on a 7 by 7 chessboard until one wins by making four items consecutively in one row. The project is written in Java using the swing and the socket class. 
 ---
