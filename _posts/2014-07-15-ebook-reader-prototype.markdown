@@ -8,7 +8,7 @@ content-img2: book_cover.png
 content-img3: book_page.png
 alt: image-alt
 project-date: October 2015
-client: Start Bootstrap
+client: None
 category: Web Development
 description: The project is written in Java using the swing class.
 ---
