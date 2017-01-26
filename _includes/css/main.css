@@ -88,8 +88,9 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background-color: transparent;
-	background: url(img/DSC01968.jpg) no-repeat center center fixed;
+	/*background-color: transparent;*/
+	background: url(img/DSC01968.jpg) no-repeat center center scroll;/* fixed;*/
+	/*background-attachment: scroll;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
