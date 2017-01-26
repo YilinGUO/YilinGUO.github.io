@@ -91,7 +91,7 @@ header {
 	/*background-color: transparent;*/
 	background: url(img/DSC01968.jpg) no-repeat center center scroll;/* fixed;*/
 	/*background-attachment: scroll;*/
-	-webkit-background-size: cover;
+	/*-webkit-background-size: cover;*/
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
@@ -99,9 +99,18 @@ header {
 }
 
 header .container {
-	padding-top: 100px;
-	padding-bottom: 50px;
+	/*padding-top: 100px;
+	padding-bottom: 100px;*/
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: block;
 }
+
+/*header .container .site-wrapper {
+    vertical-align: middle;
+    bottom: 50%;
+}*/
 
 header img {
 	display: block;
@@ -119,6 +128,7 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
+	display: block;
 	text-shadow: 2px 2px gray;
 	color: white;
 	font-size: 1.25em;
