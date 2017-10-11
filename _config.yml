@@ -46,8 +46,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: Ann Arbor
-  - line: MI 48105
+  - line: Seattle
+  - line: WA 98109
 
 # Build settings
 markdown: kramdown
